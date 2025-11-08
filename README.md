@@ -3,8 +3,11 @@ Please & Thank You.
 
 ## Where are you?
 You probably have questions where you, and what cats have to do with any of this.  
-All of this will become clear with time, quite literally. Except the cats.  
-For now though you may have to wait. This is an active project and still in development.
+All of this will become clear with time, quite literally.  
+Except the cats. 
+<br>
+For now though you may have to wait.  
+This is an active project and still in development.
 ## What can you do?
 Feel free to explore.  
 There are only three _Rules_:
