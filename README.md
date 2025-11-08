@@ -8,11 +8,10 @@ For now though you may have to wait. This is an active project and still in deve
 # What can you do?
 Feel free to explore.  
 There are only three _Rules_:
-> Explore
-> Stay Kind
-> And no cats were harmed in the production of this website
+> Explore this page  
+> Stay Kind  
+> And no cats were harmed in the production of this website.
 <br>
 <br>
-<br>
-And one last thing.
+And one last thing.  
 Just remember not every mistake is unintentional.
