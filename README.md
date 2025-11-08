@@ -9,7 +9,7 @@ For now though you may have to wait. This is an active project and still in deve
 Feel free to explore.  
 There are only three _Rules_:
 > Explore this page  
-> Stay Kind
-> And no cats were harmed in the production of this website.
+> Stay Kind  
+> And no cats were harmed in the production of this website.  
 And one last thing.  
 Just remember not every mistake is unintentional.
