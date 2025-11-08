@@ -13,7 +13,8 @@ Feel free to explore.
 There are only three _Rules_:
 > Explore this page  
 > Stay Kind  
-> And no cats were harmed in the production of this website.<br>  
+> And no cats were harmed in the production of this website.
+> <br>  
 
 And one last thing.  
 Just remember not every mistake is unintentional.
