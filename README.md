@@ -11,5 +11,5 @@ There are only three _Rules_:
 > Explore this page  
 > Stay Kind  
 > And no cats were harmed in the production of this website.  
-And one last thing.  
+<br>And one last thing.  
 Just remember not every mistake is unintentional.
