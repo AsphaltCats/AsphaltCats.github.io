@@ -13,11 +13,23 @@ layout: default
 <p>Feel free to explore.<br>There are only three <em>Rules</em>:</p>
 <blockquote>
 <p>Explore this page<br>Stay Kind<br>And no cats were harmed in the production of this website.<br>
-  <button style=" width: 250px;
+  <button onclick="takeTo()" style=" width: 250px;
                   height: 18px;
                   background-color: #1a1a1a;
                   border: #1a1a1a;">
   </button><br></p>
 </blockquote>
 <p>And one last thing.<br>Just remember not every mistake is unintentional.</p>
+<script type="text/javascript">
+    const numClickHiddenUntil = 1;
+    var numClick = 0;
+    function takeTo(){
+      if (numClick == numClickHiddenUntil) {
+        window.location.href = "http://www.w3schools.com";
+      }
+      else {
+        numClick = numClick + 1;
+      }
+    }
+</script>
 </html>
