@@ -38,11 +38,11 @@ layout: default
       curl.src="img/BackgroundPanelTopRightFolded.png";
     }  
     function takeToTwo(){
-      if (numClickTwo == numClickToUnhide) {
+      if (numClickTwo == numClickToUnhide+1) {
         window.location.href = "discover";
       }
       else {
-        if (numClickTwo = numClickToUnhide-1) {
+        if (numClickTwo = numClickToUnhide) {
           changeSource();
         }
         numClickTwo = numClickTwo + 1;
