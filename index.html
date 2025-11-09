@@ -22,7 +22,7 @@ layout: default
 <p>And one last thing.<br>Just remember not every mistake is unintentional.</p>
 <script type="text/javascript">
     let panelTopRight = "img/BackgroundPanelTopRight.png";
-    const numClickToUnhide = 3;
+    const numClickToUnhide = 2;
     var numClick = 0;
     var numClickTwo = 0;
     function takeToOne(){
@@ -42,7 +42,7 @@ layout: default
         window.location.href = "discover";
       }
       else {
-        if (numClickTwo = numClickToUnhide) {
+        if (numClickTwo == numClickToUnhide) {
           changeSource();
         }
         numClickTwo = numClickTwo + 1;
