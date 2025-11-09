@@ -33,6 +33,10 @@ layout: default
         numClick = numClick + 1;
       }
     }
+    function changeSource(){
+      var curl = document.getElementById("Curl");
+      curl.src="img/BackgroundPanelTopRightFolded.png";
+    }  
     function takeToTwo(){
       if (numClickTwo == numClickToUnhide) {
         window.location.href = "discover";
@@ -40,13 +44,13 @@ layout: default
       else {
         numClickTwo = numClickTwo + 1;
         if (numClickTwo = numClickToUnhide-1) {
-          panelTopRight ="img/BackgroundPanelTopRightFolded.png";
+          changeSource();
         }
       }
     }
 </script>
 <div>
-  <img src=panelTopRight alt="Error" style="position:absolute;
+  <img id = "Curl" src="img/BackgroundPanelTopRight.png" alt="Error" style="position:absolute;
        top: 0;
        right:0;
        height:100px;">
