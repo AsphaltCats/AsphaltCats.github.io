@@ -13,7 +13,7 @@ layout: default
 <p>Feel free to explore.<br>There are only three <em>Rules</em>:</p>
 <blockquote>
 <p>Explore this page<br>Stay Kind<br>And no cats were harmed in the production of this website.<br>
-  <button onclick="takeTo(locOne)" style=" width: 250px;
+  <button onclick="takeToOne()" style=" width: 250px;
                   height: 18px;
                   background-color: #1a1a1a;
                   border: #1a1a1a;">
@@ -21,25 +21,36 @@ layout: default
 </blockquote>
 <p>And one last thing.<br>Just remember not every mistake is unintentional.</p>
 <script type="text/javascript">
-    let locOne = "found";
-    let locTwo = "discover";
+    let panelTopRight = "img/BackgroundPanelTopRight.png";
     const numClickToUnhide = 2;
     var numClick = 0;
-    function takeTo(place){
+    var numClickTwo = 0;
+    function takeToOne(){
       if (numClick == numClickToUnhide) {
-        window.location.href = place;
+        window.location.href = "found";
       }
       else {
         numClick = numClick + 1;
       }
     }
+    function takeToTwo(){
+      if (numClickTwo == numClickToUnhide) {
+        window.location.href = "discover";
+      }
+      else {
+        numClickTwo = numClickTwo + 1;
+        if (numClickTwo = numClickToUnhide-1) {
+          panelTopRight ="img/BackgroundPanelTopRightFolded.png";
+        }
+      }
+    }
 </script>
 <div>
-  <img src="img/BackgroundPanelTopRight.png" alt="Error" style="position:absolute;
+  <img src=panelTopRight alt="Error" style="position:absolute;
        top: 0;
        right:0;
        height:100px;">
-  <button onclick="takeTo(locTwo)" style="position:absolute;
+  <button onclick="takeToTwo()" style="position:absolute;
                   width: 100px;
                   height: 100px;
                   top: 0;
