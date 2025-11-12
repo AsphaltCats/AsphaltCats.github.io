@@ -4,20 +4,24 @@ layout: defaultTwo
 
 <!DOCTYPE html>
 <html>
-<h2 onload="addRandomElementStart()" id="you-found-another-page">You found another page!</h2><p>How boring!<br>
+<h2 id="you-found-another-page">You found another page!</h2><p>How boring!<br>
   Oh! And here's attribution: <a href="https://www.vecteezy.com/free-vector/page" style = "color: #FFFFFF;">Page Vectors by Vecteezy</a></p>
 <style>
 </style>
 <script type="text/javascript">
-  function addRandomElement(){
+  function addRandomElement(x,y){
+      if(y==10){
+        return;
+      }
       const newDiv = document.createElement("div");
       newDiv.style.position="absolute";
       newDiv.style.width="1px";
       newDiv.style.height="1px";
-      newDiv.style.top="0";
+      newDiv.style.top=toString(x);
       newDiv.style.left="0";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
+      addRandomElement(x+1,y+1);
   }
   function addRandomElementStart(){
       const newDiv = document.createElement("div");
@@ -28,6 +32,7 @@ layout: defaultTwo
       newDiv.style.left="0";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
+      addRandomElement(1,1);
   }
   addRandomElementStart();
 </script>
