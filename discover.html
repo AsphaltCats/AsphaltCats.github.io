@@ -10,6 +10,7 @@ layout: defaultTwo
 </style>
 <script type="text/javascript">
   function addRandomElement(x,y){
+      let l = x + 0;
       if(y==10){
         return;
       }
@@ -17,12 +18,9 @@ layout: defaultTwo
       newDiv.style.position="absolute";
       newDiv.style.width="1px";
       newDiv.style.height="1px";
-      newDiv.style.top="0px";
-      let twig = toString(x).concat("px");
+      let twig = toString(l).concat("px");
       newDiv.id = twig;
-      if(x != undefined){
-        newDiv.style.top=twig;
-      }
+      newDiv.style.top=twig;
       newDiv.style.left="2px";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
