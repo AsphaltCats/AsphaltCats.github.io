@@ -20,6 +20,8 @@ layout: defaultTwo
 <script type="text/javascript">
   function addRandomElement(){
       const newDiv = document.createElement("div");
+      const newContent = document.createTextNode("Hi there and greetings!");
+      newDiv.appendChild(newContent);
       newDiv.id="OnePix";
       const currentDiv = document.getElementById("Boom");
       document.body.insertBefore(newDiv, currentDiv);
