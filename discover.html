@@ -4,8 +4,8 @@ layout: defaultTwo
 
 <!DOCTYPE html>
 <html>
-<h2 onload="addRandomElement()" id="you-found-another-page">You found another page!</h2>How boring!<br>
-  Oh! And here's attribution: <a href="https://www.vecteezy.com/free-vector/page" style = "color: #FFFFFF;">Page Vectors by Vecteezy</a><p>
+<h2 onload="addRandomElement()" id="you-found-another-page">You found another page!</h2><p id = "Boom">How boring!<br>
+  Oh! And here's attribution: <a href="https://www.vecteezy.com/free-vector/page" style = "color: #FFFFFF;">Page Vectors by Vecteezy</a></p>
 <style>
 #OnePix{
   position: absolute;
@@ -21,6 +21,8 @@ layout: defaultTwo
   function addRandomElement(){
       const newDiv = document.createElement("div");
       newDiv.id="OnePix";
+      const currentDiv = document.getElementById("Boom");
+      document.body.insertBefore(newDiv, currentDiv);
   }
 </script>
 </html>
