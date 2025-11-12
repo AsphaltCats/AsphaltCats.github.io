@@ -17,9 +17,12 @@ layout: defaultTwo
       newDiv.style.position="absolute";
       newDiv.style.width="1px";
       newDiv.style.height="1px";
+      newDiv.style.top="0px";
       let twig = toString(x).concat("px");
       newDiv.id = twig;
-      newDiv.style.top=twig;
+      if(x != undefined){
+        newDiv.style.top=twig;
+      }
       newDiv.style.left="2px";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
