@@ -10,7 +10,7 @@ layout: defaultTwo
 </style>
 <script type="text/javascript">
   function addRandomElement(x,y){
-      if(y==10){
+      if(y==100){
         return;
       }
       const newDiv = document.createElement("div");
@@ -21,7 +21,7 @@ layout: defaultTwo
       newDiv.style.left="2px";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
-      addRandomElement(x+1,y+1);
+      setTimeout(addRandomElement(x+1,y+1),1000);
   }
   function addRandomElementStart(){
       const newDiv = document.createElement("div");
