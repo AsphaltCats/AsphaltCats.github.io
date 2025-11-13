@@ -30,13 +30,13 @@ layout: defaultTwo
       const newDiv = document.createElement("div");
       newDiv.id = "OnePix";
       newDiv.style.position="absolute";
-      let a = Math.floor(Math.random() * 10000);
-      let b = Math.floor(Math.random() * 10000);
+      let a = Math.floor(Math.random() * 1000);
+      let b = Math.floor(Math.random() * 1000);
       newDiv.style.top=a+"px";
       newDiv.style.left=b+"px";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
-      addRandomElement(1,1);
+      addRandomElement(a+1,b+1);
   }
   addRandomElementStart();
 </script>
