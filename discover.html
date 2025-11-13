@@ -13,15 +13,15 @@ layout: defaultTwo
 }
 </style>
 <script type="text/javascript">
-  function addRandomElement(x,y){
-      if(y==100){
+  function addRandomElement(x,y,z){
+      if(z==100){
         return;
       }
       const newDiv = document.createElement("div");
       newDiv.id = "OnePix";
       newDiv.style.position="absolute";
       newDiv.style.top=x+"px";
-      newDiv.style.left=x+"px";
+      newDiv.style.left=y+"px";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
       setTimeout(addRandomElement(x+1,y+1),1000);
@@ -36,7 +36,7 @@ layout: defaultTwo
       newDiv.style.left=b+"px";
       newDiv.style.backgroundColor="#FFFFFF";
       document.body.appendChild(newDiv);
-      addRandomElement(a+1,b+1);
+      addRandomElement(a+1,b+1,1);
   }
   addRandomElementStart();
 </script>
