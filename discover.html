@@ -8,7 +8,6 @@ layout: defaultTwo
   Oh! And here's attribution: <a href="https://www.vecteezy.com/free-vector/page" style = "color: #FFFFFF;">Page Vectors by Vecteezy</a></p>
 <style>
 #OnePix {
-  position: absolute;
   width: 1 px;
   height: 1 px;
 }
@@ -19,6 +18,7 @@ layout: defaultTwo
         return;
       }
       const newDiv = document.createElement("div");
+      newDiv.style.position ="absolute";
       newDiv.id = "OnePix";
       newDiv.style.top=x+"px";
       newDiv.style.left=x+"px";
@@ -29,6 +29,7 @@ layout: defaultTwo
   function addRandomElementStart(){
       const newDiv = document.createElement("div");
       newDiv.id = "OnePix";
+      newDiv.style.position ="absolute";
       newDiv.style.top="0";
       newDiv.style.left="0";
       newDiv.style.backgroundColor="#FFFFFF";
